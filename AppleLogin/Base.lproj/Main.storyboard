@@ -24,12 +24,26 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="seZ-SW-DOh">
+                                <rect key="frame" x="40" y="284" width="313" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="00K-EG-8cz"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="faceIDButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ttj-xQ-hh3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="seZ-SW-DOh" firstAttribute="leading" secondItem="YfI-gK-8xb" secondAttribute="leading" id="6SR-fc-SbM"/>
                             <constraint firstItem="YfI-gK-8xb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="Xun-se-zTl"/>
                             <constraint firstItem="YfI-gK-8xb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="gA4-5i-N5s"/>
+                            <constraint firstItem="seZ-SW-DOh" firstAttribute="top" secondItem="YfI-gK-8xb" secondAttribute="bottom" constant="20" id="nFE-uj-kT7"/>
+                            <constraint firstItem="seZ-SW-DOh" firstAttribute="trailing" secondItem="YfI-gK-8xb" secondAttribute="trailing" id="pfo-rL-KJ1"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YfI-gK-8xb" secondAttribute="trailing" constant="40" id="z6s-vK-FxX"/>
                         </constraints>
                     </view>

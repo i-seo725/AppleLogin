@@ -33,6 +33,11 @@ class ViewController: UIViewController {
         
     }
     
+    @IBAction func faceIDButtonClicked(_ sender: UIButton) {
+        AuthenticationManager.shared.auth()
+    }
+    
+    
     @objc func appleLoginButtonClicked() {
         
         let appleIDProvider = ASAuthorizationAppleIDProvider()

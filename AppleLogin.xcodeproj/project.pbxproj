@@ -13,6 +13,7 @@
 		F44785462B3D02C1009868FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F44785442B3D02C1009868FE /* Main.storyboard */; };
 		F44785482B3D02C3009868FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F44785472B3D02C3009868FE /* Assets.xcassets */; };
 		F447854B2B3D02C3009868FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F44785492B3D02C3009868FE /* LaunchScreen.storyboard */; };
+		F44785552B3E634A009868FE /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44785542B3E634A009868FE /* AuthenticationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		F447854A2B3D02C3009868FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F447854C2B3D02C3009868FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F44785522B3D09A7009868FE /* AppleLogin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppleLogin.entitlements; sourceTree = "<group>"; };
+		F44785542B3E634A009868FE /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 		F447853D2B3D02C1009868FE /* AppleLogin */ = {
 			isa = PBXGroup;
 			children = (
+				F44785532B3D8B9B009868FE /* Assignment */,
 				F44785522B3D09A7009868FE /* AppleLogin.entitlements */,
 				F447853E2B3D02C1009868FE /* AppDelegate.swift */,
 				F44785402B3D02C1009868FE /* SceneDelegate.swift */,
@@ -65,8 +68,16 @@
 				F44785472B3D02C3009868FE /* Assets.xcassets */,
 				F44785492B3D02C3009868FE /* LaunchScreen.storyboard */,
 				F447854C2B3D02C3009868FE /* Info.plist */,
+				F44785542B3E634A009868FE /* AuthenticationManager.swift */,
 			);
 			path = AppleLogin;
+			sourceTree = "<group>";
+		};
+		F44785532B3D8B9B009868FE /* Assignment */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assignment;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F44785432B3D02C1009868FE /* ViewController.swift in Sources */,
+				F44785552B3E634A009868FE /* AuthenticationManager.swift in Sources */,
 				F447853F2B3D02C1009868FE /* AppDelegate.swift in Sources */,
 				F44785412B3D02C1009868FE /* SceneDelegate.swift in Sources */,
 			);

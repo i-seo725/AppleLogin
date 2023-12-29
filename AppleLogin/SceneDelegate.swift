@@ -30,12 +30,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             case .revoked: //탈퇴
                 print("Revoked")
             case .authorized:
-                DispatchQueue.main.async {
-                    let window = UIWindow(windowScene: windowScene)
-                    window.rootViewController = MainViewController()
-                    self.window = window
-                    window.makeKeyAndVisible()
-                }
+                print("auth")
+//                DispatchQueue.main.async {
+//                    let window = UIWindow(windowScene: windowScene)
+//                    window.rootViewController = MainViewController()
+//                    self.window = window
+//                    window.makeKeyAndVisible()
+//                }
             default: print("Not Found")
             }
         }
