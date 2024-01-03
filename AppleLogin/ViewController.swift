@@ -14,6 +14,10 @@ import AuthenticationServices
  자체 로그인만 구성될 경우 애플 로그인 필수 아님
  */
 
+/*
+ 1. Build Configuration: Debug / Release, Test / Premium
+ */
+
 class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +35,17 @@ class ViewController: UIViewController {
         
         appleLoginButton.addTarget(self, action: #selector(appleLoginButtonClicked), for: .touchUpInside)
         
+        guard let configuration = Bundle.main.object(forInfoDictionaryKey: "CFBundleIdentifier") as? String else {
+            print("configuration info error")
+            return
+        }
+        
+        if configuration == "com.eunseo.AppleLogin" {
+            view.backgroundColor = .systemYellow
+            print(configuration)
+        } else {
+            view.backgroundColor = .gray
+        }
     }
     
     @IBAction func faceIDButtonClicked(_ sender: UIButton) {
